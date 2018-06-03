@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+nanobuild=hello_normal
+smallbuild=hello_small
+
+clean:
+	echo "CLEANING"
+	dh clean
+
+# option 1
+override_dh_auto_build:
+	echo "build normal" ;
+	make hello;
+	make hello_small;
+
+# option 2
+
+%:
+	dh $@

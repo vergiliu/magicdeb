@@ -1,0 +1,2 @@
+debian/hello/hello_normal opt/
+debian/hello/hello_small opt/
